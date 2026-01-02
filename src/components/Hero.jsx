@@ -40,7 +40,7 @@ const Hero = () => {
            height: '100%',
            duration: 1,
            ease: 'power2.inOut',
-           onStart: () =>                       nextVideoRef.current.play(),
+           onStart: () => nextVideoRef.current.play(),
         }
         );
 
@@ -68,7 +68,7 @@ useGSAP(() => {
 
   gsap.from('#video-frame', {
     clipPath: 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)',
-    borderRadius: '0 0 0 0',
+    borderRadius: '0.5 0.5 0 0',
     ease: 'power1.out',
     scrollTrigger:{
         trigger: '#video-frame',
